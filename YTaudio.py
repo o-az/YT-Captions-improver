@@ -12,9 +12,10 @@ ydl_opts = {
     'format': 'bestaudio/best',
     'postprocessors': [{
         'key': 'FFmpegExtractAudio',
-        'preferredcodec': 'wav',
+        'preferredcodec': 'wav', # the format of the audio is here
         'preferredquality': '192',
     }],
+    # here add the path where you want the audio to go. No extension need be added for audio file
     'outtmpl': '/Users/Omar/Desktop/Pythonstuff/Joe.'
 }
 try:
