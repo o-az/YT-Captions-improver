@@ -3,7 +3,6 @@
 
 # CS:4980 Topics in Computer Science II: Research and Development of Accessible Computing Technologies
 # Instructor: Kyle Rector
-# Author: Omar Bin Salamah
 
 import re
 from collections import Counter
