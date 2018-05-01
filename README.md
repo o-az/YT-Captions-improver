@@ -5,4 +5,10 @@ YouTube is an amazing place for people to learn new things and be entertained. T
 
 Literally all you have to do to test this is:
   1. clone this
-  2. run the bash file on your terminal like this ~$ sh run.sh
+  2. On YTaudio.py go to line 19 and specify where the file needs to be saved and the name of the file
+  2. On YTaudio.py go to line 26 and add the link of the YouTube video you wish to download audabily
+  3. On GoogleASR.py go to line 14 and specify the name of the file with the extension (.wav for example)
+  4. On GoogleASR.py go to line 28 and specify the name of the file where the Speech2Text would go
+  5. On puncuation.py go to line 109 and specify where the .txt file from speech2text is stored
+  6. On puncuation.py go to line 145 and specify where the result should be saved
+  7. Run the bash file on your terminal like this ~$ sh run.sh
