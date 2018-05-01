@@ -106,7 +106,7 @@ def get_ginger_result(text):
 
 def main():
 
-    with open('result.txt', 'r') as f:
+    with open('/Users/Omar/captionsYT/result.txt', 'r') as f: # where the ASR is saved
         file = f.read()
 
     original_text = repr(file)
@@ -141,8 +141,8 @@ def main():
             color_gap += gap
             fixed_gap += to_index-from_index-len(suggest)
 
-    #print(fixed_text + '.')
-    with open('punc_result.txt', 'w') as res:
+    print(fixed_text + '.')
+    with open('/Users/Omar/captionsYT/punc_result.txt', 'w') as res: # specify path where you want result to be saved
         res.write(fixed_text + '.')
 
 

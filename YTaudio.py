@@ -16,16 +16,17 @@ ydl_opts = {
         'preferredquality': '192',
     }],
     # here add the path where you want the audio to go. No extension need be added for audio file
-    'outtmpl': '/Users/Omar/Desktop/Pythonstuff/Joe.'
+    'outtmpl': '/Users/Omar/captionsYT/PRES.'
 }
 try:
     with youtube_dl.YoutubeDL(ydl_opts) as ydl:
         # start at <seconds>: end the link with ?t= <second> s (example: ?t=7s)
         # start at <minutes>: end the link with ?t= <minute> m <second> (example: ?t=1m3s)
 
-        ydl.download(['https://www.youtube.com/watch?v=29oD-AeDwrk'])  # here you can put any link
+        ydl.download(['https://www.youtube.com/watch?v=UWXEwFnl7Ng&feature=youtu.be'])  # here you can put any link
 except Exception:
     pass
+
+print('\n\n YT audio is done! :) \n\n')
 # we're not going to worry about other implementations
 # we're only interested in extracting the audio
-
