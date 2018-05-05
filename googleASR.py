@@ -11,7 +11,7 @@ import speech_recognition as sr
 
 # get path to "some_audio_file.wav" in the same folder as this
 from os import path
-AUDIO_FILE = path.join(path.dirname(path.realpath(__file__)), "PRES.wav") # the name of the YTaudio downloaded
+AUDIO_FILE = path.join(path.dirname(path.realpath(__file__)), "<audio-file-name>.wav") # the name of the YTaudio downloaded
 
 # use the audio file as the audio source
 r = sr.Recognizer()
@@ -25,8 +25,7 @@ try:
     # instead of `r.recognize_google(audio)`
     result = r.recognize_google(audio)
     #print("\n\nresult: " + result)
-    with open('/Users/Omar/captionsYT/result.txt', 'w') as f:
-    #with open('result.txt', 'w') as f:
+    with open('<path/filename.txt>', 'w') as f: # specifiy the path and the file name of where this should go.
         f.write(result.strip(''))
         f.close()
 
