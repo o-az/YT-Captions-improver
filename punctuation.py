@@ -106,7 +106,7 @@ def get_ginger_result(text):
 
 def main():
 
-    with open('/Users/Omar/captionsYT/result.txt', 'r') as f: # where the ASR is saved
+    with open('<path/filename.txt', 'r') as f: # where the ASR is saved (MAKE SURE ALL IN THE SAME DIRECTORY)
         file = f.read()
 
     original_text = repr(file)
