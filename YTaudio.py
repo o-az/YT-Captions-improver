@@ -23,7 +23,7 @@ try:
         # start at <seconds>: end the link with ?t= <second> s (example: ?t=7s)
         # start at <minutes>: end the link with ?t= <minute> m <second> (example: ?t=1m3s)
 
-        ydl.download(['https://www.youtube.com/watch?v=UWXEwFnl7Ng&feature=youtu.be'])  # here you can put any link
+        ydl.download(['<youtube-video-link>'])  # here you can put any link
 except Exception:
     pass
 
